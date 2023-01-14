@@ -68,6 +68,7 @@ powershell = "virtualenv.activation.powershell:PowerShellActivator"
 python = "virtualenv.activation.python:PythonActivator"
 
 [project.entry-points."virtualenv.create"]
+ironpython3-win = "virtualenv.create.via_global_ref.builtin.ironpython.ipy3:IronPython3Windows"
 cpython2-mac-arm-framework = "virtualenv.create.via_global_ref.builtin.cpython.mac_os:CPython2macOsArmFramework"
 cpython2-mac-framework = "virtualenv.create.via_global_ref.builtin.cpython.mac_os:CPython2macOsFramework"
 cpython2-posix = "virtualenv.create.via_global_ref.builtin.cpython.cpython2:CPython2Posix"
@@ -137,4 +138,7 @@ ignore = [
 markers = ["slow"]
 timeout = 600
 addopts = "--tb=auto -ra --showlocals --no-success-flaky-report"
-env = ["PYTHONWARNINGS=ignore:DEPRECATION::pip._internal.cli.base_command", "PYTHONIOENCODING=utf-8"]
+env = [
+  "PYTHONWARNINGS=ignore:DEPRECATION::pip._internal.cli.base_command",
+  "PYTHONIOENCODING=utf-8",
+]

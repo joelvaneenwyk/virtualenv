@@ -179,6 +179,8 @@ restype
 rfind
 rglob
 rmdir
+ironpython
+ipy
 rpartition
 rst
 rtd

@@ -8,6 +8,7 @@ from virtualenv.util.path import ensure_dir
 from virtualenv.util.subprocess import run_cmd
 
 from .api import ViaGlobalRefApi, ViaGlobalRefMeta
+from .builtin.ironpython.ipy3 import IronPython3Windows
 from .builtin.pypy.pypy3 import Pypy3Windows
 
 
@@ -49,6 +50,17 @@ class Venv(ViaGlobalRefApi):
         """
         creator = self.describe
         if isinstance(creator, Pypy3Windows) and creator.less_v37:
+            for exe in creator.executables(self.interpreter):
+                exe.run(creator, self.symlinks)
+
+    def executables_for_win_ironpython(self):
+        """
+        PyPy <= 3.6 (v7.3.3) for Windows contains only pypy3.exe and pypy3w.exe
+        Venv does not handle non-existing exe sources, e.g. python.exe, so this
+        patch does it.
+        """
+        creator = self.describe
+        if isinstance(creator, IronPython3Windows):
             for exe in creator.executables(self.interpreter):
                 exe.run(creator, self.symlinks)
 
