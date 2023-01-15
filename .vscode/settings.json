@@ -1,0 +1,14 @@
+{
+    "terminal.integrated.environmentChangesIndicator": "on",
+    "terminal.integrated.unicodeVersion": "11",
+    "terminal.integrated.env.windows": {
+        "IRON_PYTHON_HOME": "C:\\Program Files\\IronPython 3.4",
+        // Consider adding '${env:APPDATA}\\Python\\Scripts'
+        "PATH": "${env:IRON_PYTHON_HOME};${env:IRON_PYTHON_HOME}\\Scripts;${env:PATH}"
+    },
+    "python.testing.pytestArgs": ["tests"],
+    "python.testing.unittestEnabled": false,
+    "python.testing.pytestEnabled": true,
+    "python.terminal.activateEnvInCurrentTerminal": true,
+    "python.terminal.activateEnvironment": true
+}

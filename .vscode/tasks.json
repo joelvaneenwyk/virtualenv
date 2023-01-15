@@ -1,0 +1,22 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "pip install",
+            "type": "shell",
+            "command": "python39 -m pip install . .[test] tox pytest"
+        },
+        {
+            "label": "pyenv local",
+            "type": "shell",
+            "command": "pyenv local 3.9.13"
+        },
+        {
+            "label": "tox -e fix",
+            "type": "shell",
+            "command": "pyenv exec tox -e fix"
+        }
+    ]
+}
