@@ -3,14 +3,14 @@
     "implementation": "IronPython",
     "version_info": {
         "major": 3,
-        "minor": 10,
-        "micro": 4,
+        "minor": 4,
+        "micro": 0,
         "releaselevel": "final",
         "serial": 0
     },
     "architecture": 64,
-    "version_nodot": "310",
-    "version": "3.10.4 (tags/v3.10.4:9d38120, Mar 23 2022, 23:13:41) [MSC v.1929 64 bit (AMD64)]",
+    "version_nodot": "34",
+    "version": "3.4.0 (3.4.0.1000)\n[.NETFramework,Version=v4.6.2 on .NET Framework 4.8.9105.0 (64-bit)]",
     "os": "nt",
     "prefix": "c:\\path\\to\\python",
     "base_prefix": "c:\\path\\to\\python",
@@ -23,7 +23,7 @@
     "has_venv": false,
     "path": [
         "c:\\path\\to\\python\\Scripts\\virtualenv.exe",
-        "c:\\path\\to\\python\\python310.zip",
+        "c:\\path\\to\\python\\python34.zip",
         "c:\\path\\to\\python",
         "c:\\path\\to\\python\\Lib\\site-packages"
     ],

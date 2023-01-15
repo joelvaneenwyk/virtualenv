@@ -43,7 +43,7 @@ class IronPython3Windows(IronPythonWindows, IronPython3):
 
     @classmethod
     def has_shim(cls, interpreter):
-        return interpreter.version_info.minor >= 7 and cls.shim(interpreter) is not None
+        return interpreter.version_info.minor >= 4 and cls.shim(interpreter) is not None
 
     @classmethod
     def shim(cls, interpreter):

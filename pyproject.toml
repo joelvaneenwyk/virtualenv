@@ -137,7 +137,7 @@ ignore = [
 [tool.pytest.ini_options]
 markers = ["slow"]
 timeout = 600
-addopts = "--tb=auto -ra --showlocals --no-success-flaky-report"
+addopts = "--tb=auto -ra --showlocals" # --no-success-flaky-report"
 env = [
   "PYTHONWARNINGS=ignore:DEPRECATION::pip._internal.cli.base_command",
   "PYTHONIOENCODING=utf-8",
