@@ -180,7 +180,9 @@ rfind
 rglob
 rmdir
 ironpython
+ironpython3
 ipy
+ipy3
 rpartition
 rst
 rtd

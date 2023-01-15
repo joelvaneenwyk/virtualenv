@@ -3,7 +3,6 @@ import fnmatch
 from itertools import chain
 from operator import methodcaller as method
 from pathlib import Path
-from textwrap import dedent
 
 from virtualenv.create.describe import Python3Supports
 from virtualenv.create.via_global_ref.builtin.ref import PathRefToDest

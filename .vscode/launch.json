@@ -1,42 +1,42 @@
 {
-    // Use IntelliSense to learn about possible attributes.
-    // Hover to view descriptions of existing attributes.
-    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
-    "version": "0.2.0",
-    "configurations": [
-        {
-            "name": "Python: Current File",
-            "type": "python",
-            "request": "launch",
-            "program": "${file}",
-            "console": "integratedTerminal",
-            "justMyCode": true
-        },
-        {
-            "name": "IronPython",
-            "type": "python",
-            "request": "launch",
-            "justMyCode": false,
-            "stopOnEntry": true,
-            "program": "${workspaceFolder}/src/virtualenv/__main__.py",
-            "env": {
-                "PYTHONPATH": "${workspaceFolder}/src"
-            },
-            "args": [
-                "--reset-app-data",
-                "--with-traceback",
-                "--verbose",
-                "--no-download",
-                "--python",
-                "C:\\Program Files\\IronPython 3.4\\ipy.exe",
-                ".venv/ironpytyhon"
-            ],
-            "cwd": "${workspaceFolder}",
-            "presentation": {
-                "hidden": false,
-                "group": "0. Default",
-                "order": 2
-            }
-        }
-    ]
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Python: Current File",
+      "type": "python",
+      "request": "launch",
+      "program": "${file}",
+      "console": "integratedTerminal",
+      "justMyCode": true
+    },
+    {
+      "name": "IronPython",
+      "type": "python",
+      "request": "launch",
+      "justMyCode": false,
+      "stopOnEntry": true,
+      "program": "${workspaceFolder}/src/virtualenv/__main__.py",
+      "env": {
+        "PYTHONPATH": "${workspaceFolder}/src"
+      },
+      "args": [
+        "--reset-app-data",
+        "--with-traceback",
+        "--verbose",
+        "--no-download",
+        "--python",
+        "C:\\Program Files\\IronPython 3.4\\ipy.exe",
+        ".venv/ironpytyhon"
+      ],
+      "cwd": "${workspaceFolder}",
+      "presentation": {
+        "hidden": false,
+        "group": "0. Default",
+        "order": 2
+      }
+    }
+  ]
 }
