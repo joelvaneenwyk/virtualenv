@@ -88,7 +88,7 @@ class IronPython3Windows(IronPythonWindows, IronPython3):
         move/rename *zip* file and edit `sys.path` by editing *_pth* file.
         Here the `pattern` is used only for the default *zip* file name!
         """
-        pattern = f"*python{interpreter.version_nodot}.zip"
+        pattern = f"*ironpython{interpreter.version_nodot}.zip"
         matches = fnmatch.filter(interpreter.path, pattern)
         matched_paths = map(Path, matches)
         existing_paths = filter(method("exists"), matched_paths)

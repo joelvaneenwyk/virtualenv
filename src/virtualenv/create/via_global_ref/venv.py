@@ -41,6 +41,7 @@ class Venv(ViaGlobalRefApi):
             ensure_dir(lib)
         super().create()
         self.executables_for_win_pypy_less_v37()
+        self.executables_for_win_ironpython()
 
     def executables_for_win_pypy_less_v37(self):
         """
@@ -55,7 +56,7 @@ class Venv(ViaGlobalRefApi):
 
     def executables_for_win_ironpython(self):
         """
-        PyPy <= 3.6 (v7.3.3) for Windows contains only pypy3.exe and pypy3w.exe
+        IronPython for Windows contains only ipy3.exe and ipy3w.exe
         Venv does not handle non-existing exe sources, e.g. python.exe, so this
         patch does it.
         """
