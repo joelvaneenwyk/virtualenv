@@ -17,6 +17,11 @@
       "label": "tox -e fix",
       "type": "shell",
       "command": "pyenv exec tox -e fix"
+    },
+    {
+      "label": "tox -e tox",
+      "type": "shell",
+      "command": "pyenv exec tox -e tox"
     }
   ]
 }

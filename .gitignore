@@ -29,3 +29,5 @@ dist
 
 Dockerfile*
 .dockerignore
+
+.env
