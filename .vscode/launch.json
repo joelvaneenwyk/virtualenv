@@ -29,7 +29,7 @@
         "--no-download",
         "--python",
         "C:\\Program Files\\IronPython 3.4\\ipy.exe",
-        ".venv/ironpytyhon"
+        ".venv/ironpython"
       ],
       "cwd": "${workspaceFolder}",
       "presentation": {
