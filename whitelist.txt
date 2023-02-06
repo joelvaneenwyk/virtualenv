@@ -51,6 +51,7 @@ cust
 defpath
 delenv
 deque
+devnull
 distlib
 distro
 dll
@@ -88,7 +89,6 @@ gevent
 groupby
 hgignore
 hkey
-htmlhelp
 img
 impls
 iread
@@ -185,7 +185,6 @@ ipy
 ipy3
 rpartition
 rst
-rtd
 scr
 sdist
 setenv
@@ -214,6 +213,7 @@ testpth
 tgroup
 tk
 topdown
+towncrier
 tox
 truediv
 unsecure
